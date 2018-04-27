@@ -15,6 +15,8 @@ require "includes/form_handlers/login_handler.php";
 	<span>email: spider@spiderman.com</span><br>
 	<span>password: spiderman</span>
 	<span>Or create another account.</span>
+	<br>
+	<br>
 	<form action="register.php" method="POST">
 		<input type="email" name="log_email" placeholder="Email" value="<?php if(isset($_SESSION['log_email'])) { echo $_SESSION['log_email']; } ?>" required>
 		<br>
